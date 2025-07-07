@@ -22,11 +22,11 @@
 
 * The Puzzlebot NVIDIA JETSON® Edition is an extension of the Puzzlebot Hacker Edition.
 * Developed alongside NVIDIA, combining the power of the Hackerboard and the NVIDIA JETSON Nano®
-  
-<picture>
-  <source srcset="https://github.com/user-attachments/assets/0e4a3b36-1815-42f8-8a6e-c85b2b4a019d">
-  <img alt="Shows Puzzlebot views in black or white." width="700" align="right">
-</picture>
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/edd9ea01-ecbc-4fe1-9ce1-c9affd19c339" alt="Shows Puzzlebot views in black or white." width="650">
+</p>
 
 * Allows users to implement research-level, real-time algorithms such as AI & Computer Vision, SLAM and 
 autonomous driving algorithms using ROS.
