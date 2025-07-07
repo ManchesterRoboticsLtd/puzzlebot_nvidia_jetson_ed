@@ -2,37 +2,39 @@
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ManchesterRoboticsLtd/Puzzlebot/blob/main/Misc/Logos/NVIDIA_logo_BL.jpg">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/Puzzlebot/blob/main/Misc/Logos/NVIDIA_logo_WL.jpg">
-  <img alt="Shows Puzzlebot logo in black or white." width="170" align="right">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ManchesterRoboticsLtd/Puzzlebot/blob/main/Misc/Logos/MCR2_Logo_White.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/Puzzlebot/blob/main/Misc/Logos/MCR2_Logo_Black.png">
-  <img alt="Shows MCR2 logo in black or white." width="150" align="right">
-</picture>
-
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ManchesterRoboticsLtd/Puzzlebot/blob/main/Misc/Logos/Puzzle_Bot_Logo_W.png">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/ManchesterRoboticsLtd/Puzzlebot/blob/main/Misc/Logos/Puzzle_Bot_Logo_B.png">
-  <img alt="Shows MCR2 logo in black or white." width="250" align="left">
+  <img alt="Shows MCR2 logo in black or white." width="250" align="right">
 </picture>
 
 
-
-<br/><br/>
-<br/><br/>
+ <div id="user-content-toc">
+  <ul align="center" style="list-style: none;">
+    <summary>
+      <h1>Puzzlebot NVIDIA JETSON® Edition</h1>
+    </summary>
+  </ul>
+</div>
 
 ---
 
-# Puzzlebot: NVIDIA JETSON® Edition
-The Puzzlebot NVIDIA JETSON® Edition is an extension of the Puzzlebot Hacker Edition encompassing an NVIDIA Jetson® CPU, and a Raspberry Pi® Camera . Combining 
-the power of the Hacker Board and the NVIDIA JETSON Nano®, allows users to implement research-level, real-time algorithms such as AI & Computer Vision, SLAM and 
+## Introduction
+
+* The Puzzlebot NVIDIA JETSON® Edition is an extension of the Puzzlebot Hacker Edition.
+  
+<picture>
+  <source srcset="https://github.com/user-attachments/assets/0e4a3b36-1815-42f8-8a6e-c85b2b4a019d">
+  <img alt="Shows Puzzlebot views in black or white." width="600" align="right">
+</picture>
+
+* Combining the power of the Hacker Board and the NVIDIA JETSON Nano®, allows users to implement research-level, real-time algorithms such as AI & Computer Vision, SLAM and 
 autonomous driving algorithms using ROS.
 
-The Puzzlebot NVIDIA JETSON® Edition works by communicating the Hacker Board (Plug and play) with the NVIDIA Jetson Nano®.
+* Ideal for control, advanced robotics, computer vision and AI tasks.
+
+* Puzzlebot Jetson Edition includes all essential components to develop from basic control to advanced robotics algorithms.
+
+* Designed to accompany you in your robotic applications or during the MCR2 digital curriculum.
 
 ## Configurations
 ### Puzzlebot-ROS Connection: Classic 
