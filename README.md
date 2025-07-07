@@ -58,8 +58,10 @@ autonomous driving algorithms using ROS.
 * The user can develop advanced robotic algorithms in ROS (Robot Operating System) using the computing power of the NVIDIA Jetson Nano® and communicate to the actuators and sensors using the Hackerboard.
 * The Hackerboard and NVIDIA Jetson Nano® are connected via Serial (Communication Libraires with Hackerboard, Sensors and Actuators, provided by MCR2).
 
+
+
 <p align="center" >
-  <img src="https://user-images.githubusercontent.com/67285979/232561765-37fca598-47e8-42e2-9311-81f41b370af2.png"  width="600"/>
+  <img src="https://github.com/user-attachments/assets/0283afef-7beb-42ae-ba6a-f23b684af5a6"  width="600"/>
 </p>
 
 
@@ -68,8 +70,9 @@ autonomous driving algorithms using ROS.
 * This configuration works as the previous one, with the difference that in this case the user can connect to the External computing unit (ROS Master) via Wi-Fi.
 * The ROS Master node is running in the NVIDIA Jetson Nano® making this a suitable combination for Advanced Distributed Control.
 
+
 <p align="center" >
-  <img src="https://user-images.githubusercontent.com/67285979/232562266-45612e47-63ae-435e-864b-96a582913820.png"  width="700"/>
+  <img src="https://github.com/user-attachments/assets/27e62a75-fcc9-4953-9786-ef8389449ef4"  width="700"/>
 </p>
 
 ## General Information
