@@ -37,6 +37,22 @@ autonomous driving algorithms using ROS.
 
 * Designed to accompany you in your robotic applications or during the MCR2 digital curriculum.
 
+---
+
+## 🚀 Features
+
+- 🔧 **Differential drive base** with encoder feedback  
+- 🧠 **Jetson Nano** (4-core ARM CPU + GPU for AI acceleration)  
+- 📷 **Raspberry Pi Camera (CSI)**  
+- 📡 **Time-of-Flight (ToF) distance sensor**  
+- 🌀 **Servo motor** for pan TOF scanner  
+- 🧩 Modular architecture with Hackerboard electronics  
+- 🌐 ROS 2 (Humble) compatible  
+- 🖥️ Optional Gazebo/ROS 2 simulation support  
+- 🔌 Supports additional sensors (IMU, LiDAR, etc.)
+
+---
+
 ## Configurations
 ### Puzzlebot-ROS Connection: Classic 
 * The user can develop advanced robotic algorithms in ROS (Robot Operating System) using the computing power of the NVIDIA Jetson Nano® and communicate to the actuators and sensors using the Hackerboard.
