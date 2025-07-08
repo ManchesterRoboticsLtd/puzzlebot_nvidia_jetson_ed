@@ -150,7 +150,10 @@ autonomous driving algorithms using ROS.
   </p>
   
 ### Hackerboard Communication Routines
-* The Hackerboard communication needs to be launched each time the jetson is booted (see *MCR2_Puzzlebot_Jetson_Ed_ROS2.pdf*)
+* The Hackerboard communication needs to be launched each time the jetson is booted using the following comand on the LXT Terminal of the Jetson (see *MCR2_Puzzlebot_Jetson_Ed_ROS2.pdf*)
+```
+ros2 launch puzzlebot_ros micro_ros_agent.launch.py
+```
 * To test the communication, use rostopic list. You should see  list of topics as shown, although this will depend which control mode the Hacker Board is using. 
   
 ### Testing Routines
