@@ -76,18 +76,20 @@ autonomous driving algorithms using ROS.
 </p>
 
 ## General Information
-  * NVIDIA Jetson Nano works with an image based on Ubuntu 18.04
-  * The ROS Version installed on the MCR2 Jetson Image is ROS Melodic.
+  * NVIDIA Jetson Nano works with an image based on Ubuntu 22.04
+  * The ROS Version installed on the MCR2 Jetson Image is ROS2 Humble.
 
 ## Instructions
 1. Install the latest Hackerboard Binaries, if not previously installed, install them following the instructions in the folder *MCR2_Hackerboard_Binaries*
 
 2. Flash the MCR2-Jetson Nano Image to the SD Card.
-   * Download the NVIDIA Jetson Nano Image [here](https://manchesterrobotics-my.sharepoint.com/personal/rebeca_manchester-robotics_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frebeca%5Fmanchester%2Drobotics%5Fcom%2FDocuments%2Fpuzzlebot%2D003%2Dnano%2D2gb%2Djp46%2Ezip&parent=%2Fpersonal%2Frebeca%5Fmanchester%2Drobotics%5Fcom%2FDocuments&ga=1)
+   * Download the NVIDIA Jetson Nano Image
+     * [Jetson Nano 2GB](https://manchesterrobotics-my.sharepoint.com/:u:/g/personal/mario_mtz_manchester-robotics_com/EVMUSVxzaepInxdKvzXnhpQBFf7i77sH-8Dk36olx9yuzg?e=26PTBO)
+     * [Jetson Nano 4GB](https://manchesterrobotics-my.sharepoint.com/:u:/g/personal/mario_mtz_manchester-robotics_com/EXvVxs2Mb4FMh8F7bGicvkoBsSl_ZeBqURtW6L4Tzr2_kQ?e=iVcIMZ)
   * Use the Balena Etcher to flash the image [here](https://www.balena.io/etcher)
-  * More information can be found in the presentation *Jetson Setup.pdf*
+  * More information can be found in the presentation *MCR2_Puzzlebot_Jetson_Ed_ROS2.pdf*
   
-3. Access the Hackerboard *Web Interface* (More in depth explanation can be found in the Manual)
+3. Access the Hackerboard *Web Interface* (More in depth explanation can be found in the Manual *MCR2_Puzzlebot_Jetson_Ed_ROS2.pdf*)
   * Select the Network (![image](https://user-images.githubusercontent.com/67285979/232577316-c4c3cddf-99aa-4d03-9480-7fc041363f07.png)
  ) icon on the taskbar. The icon that appears depends on your current connection state. If you don’t see one of the network icons (or a similar one) shown in the following image, select the Up arrow (^) to see if it appears there.
   * Choose the Puzzlebot Wi-Fi network of the robot you want (Puzzlebot x), then select Connect.
@@ -128,7 +130,7 @@ autonomous driving algorithms using ROS.
   <img src="https://user-images.githubusercontent.com/67285979/232582025-a5180e7a-586f-4d22-a850-845de9e612af.png"  width="500"/>
   </p>
   
-  4. Configure the Jetson (in case you have multiple robots at once) as shown in the presentation *Jetson Setup.pdf*
+  4. Configure the Jetson (in case you have multiple robots at once) as shown in the presentation *MCR2_Puzzlebot_Jetson_Ed_ROS2.pdf*
   
   5. Connect the Hackerboard using the included USB-microUSB cable.
       * If using another cable make sure is a Data-Cable not a Power-Cable
@@ -148,20 +150,18 @@ autonomous driving algorithms using ROS.
   </p>
   
 ### Hackerboard Communication Routines
-* The Hacker Board communication starts each time the Jetson is booted up
+* The Hackerboard communication needs to be launched each time the jetson is booted (see *MCR2_Puzzlebot_Jetson_Ed_ROS2.pdf*)
 * To test the communication, use rostopic list. You should see  list of topics as shown, although this will depend which control mode the Hacker Board is using. 
-* If the communication fails, the protocol can be restarted with the command:
-  ```sudo systemctl restart puzzlebot.service ```
   
 ### Testing Routines
 * Test the ROS communication with rostopic echo
-* Echo the topics /wr and /wl, and rotate the wheels
+* Echo the topics /VelocityEncL and /VelocityEncR, and rotate the wheels
 * The speed of the wheels should be displayed
 
 * Publish to the command topics defined on the Hackerboard web interface, the wheels should turn
   - If Robot Velocitites mode is used, publish to /cmd_vel
-  - If Wheel Velocitites is used, publish to /cmd_wR and /cmd_wL
-  - If Motor PWM is used, publish to /cmd_pwmR and /cmd_pwmL
+  - If Wheel Velocitites is used, publish to /VelocitySetR and /VelocitySetL
+  - If Motor PWM is used, publish to /ControlR and /ControlL
 
 ### Remote access
 * To control the robot remotely, follow the steps in the presentation.
